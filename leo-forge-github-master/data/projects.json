@@ -1,0 +1,22 @@
+[
+  {
+    "id": "seminole-inn-it",
+    "title": "Seminole Inn Motel \u2014 IT Infrastructure Assessment, Troubleshooting and Modernization",
+    "organization": "Seminole Inn Motel",
+    "role": "IT Infrastructure and Network Support",
+    "category": "Networks & IT Infrastructure",
+    "status": "in-progress",
+    "startDate": "2026-06",
+    "endDate": null,
+    "summary": "An ongoing field project documenting assessment, troubleshooting, repair, and improvement of a motel IT environment through network analysis, equipment research, testing, trial and error, verified fixes, documentation, and future planning.",
+    "featured": true,
+    "public": true,
+    "repositoryUrl": "",
+    "caseStudyUrl": "https://www.leoforgestudios.com/projects/seminole-inn-it",
+    "documentationUrl": "",
+    "latestReleaseUrl": "",
+    "evidenceVerified": false,
+    "publicWriteupAllowed": false,
+    "updatedAt": "2026-08-01"
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "platform",
+      "name",
+      "status",
+      "progress",
+      "publicWriteupAllowed",
+      "public",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "platform": {
+        "enum": [
+          "Hack The Box",
+          "TryHackMe",
+          "Other Authorized Lab"
+        ]
+      },
+      "name": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "operatingSystem": {
+        "type": "string"
+      },
+      "difficulty": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "queued",
+          "reconnaissance",
+          "in-progress",
+          "foothold-achieved",
+          "privilege-escalation",
+          "completed",
+          "archived"
+        ]
+      },
+      "progress": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 100
+      },
+      "startDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "completedDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "skills": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "tools": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "lesson": {
+        "type": "string"
+      },
+      "publicWriteupAllowed": {
+        "type": "boolean"
+      },
+      "repositoryUrl": {
+        "type": "string"
+      },
+      "platformProfileUrl": {
+        "type": "string"
+      },
+      "public": {
+        "type": "boolean"
+      },
+      "updatedAt": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}

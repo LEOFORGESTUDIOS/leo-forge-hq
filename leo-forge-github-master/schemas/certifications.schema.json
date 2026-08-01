@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "provider",
+      "pathCategory",
+      "displayOrder",
+      "status",
+      "progress",
+      "skills",
+      "verificationUrl",
+      "credentialImageUrl",
+      "githubUrl",
+      "publicNotes",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string"
+      },
+      "provider": {
+        "type": "string"
+      },
+      "pathCategory": {
+        "enum": [
+          "foundation",
+          "specialization",
+          "advanced",
+          "support"
+        ]
+      },
+      "displayOrder": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "status": {
+        "enum": [
+          "in-pursuit",
+          "actively-studying",
+          "exam-scheduled",
+          "earned",
+          "renewal-in-progress"
+        ]
+      },
+      "progress": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 0,
+        "maximum": 100
+      },
+      "studyStartDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "examDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "earnedDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "expirationDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "skills": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "verificationUrl": {
+        "type": "string"
+      },
+      "credentialImageUrl": {
+        "type": "string"
+      },
+      "githubUrl": {
+        "type": "string"
+      },
+      "publicNotes": {
+        "type": "string"
+      },
+      "updatedAt": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}

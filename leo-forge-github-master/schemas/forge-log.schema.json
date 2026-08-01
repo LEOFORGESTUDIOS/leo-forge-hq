@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "date",
+      "category",
+      "title",
+      "summary",
+      "public",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "date": {
+        "type": "string"
+      },
+      "category": {
+        "enum": [
+          "cybersecurity",
+          "ai",
+          "software",
+          "education",
+          "business",
+          "media",
+          "gaming",
+          "forgemind",
+          "networks"
+        ]
+      },
+      "title": {
+        "type": "string"
+      },
+      "summary": {
+        "type": "string"
+      },
+      "relatedProjectId": {
+        "type": "string"
+      },
+      "repositoryUrl": {
+        "type": "string"
+      },
+      "commitUrl": {
+        "type": "string"
+      },
+      "public": {
+        "type": "boolean"
+      },
+      "updatedAt": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}

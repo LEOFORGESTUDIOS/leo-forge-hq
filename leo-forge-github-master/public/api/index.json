@@ -1,0 +1,11 @@
+{
+  "service": "Leo Forge Public Data",
+  "website": "https://www.leoforgestudios.com",
+  "feeds": [
+    "site-config.json",
+    "projects.json",
+    "certifications.json",
+    "cyber-range.json",
+    "forge-log.json"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "brand",
+    "legalEntity",
+    "founder",
+    "founderAttribution",
+    "tagline",
+    "website",
+    "contactEmail",
+    "updatedAt"
+  ],
+  "properties": {
+    "brand": {
+      "type": "string"
+    },
+    "legalEntity": {
+      "type": "string"
+    },
+    "founder": {
+      "type": "string"
+    },
+    "founderAttribution": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "contactEmail": {
+      "type": "string",
+      "format": "email"
+    },
+    "publicGitHubOrganization": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "title",
+      "organization",
+      "role",
+      "category",
+      "status",
+      "startDate",
+      "summary",
+      "featured",
+      "public",
+      "evidenceVerified",
+      "publicWriteupAllowed",
+      "updatedAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "title": {
+        "type": "string"
+      },
+      "organization": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "completed",
+          "in-progress",
+          "upcoming",
+          "research",
+          "prototype",
+          "private-work",
+          "archived"
+        ]
+      },
+      "startDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "endDate": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "summary": {
+        "type": "string"
+      },
+      "featured": {
+        "type": "boolean"
+      },
+      "public": {
+        "type": "boolean"
+      },
+      "repositoryUrl": {
+        "type": "string"
+      },
+      "caseStudyUrl": {
+        "type": "string"
+      },
+      "documentationUrl": {
+        "type": "string"
+      },
+      "latestReleaseUrl": {
+        "type": "string"
+      },
+      "evidenceVerified": {
+        "type": "boolean"
+      },
+      "publicWriteupAllowed": {
+        "type": "boolean"
+      },
+      "updatedAt": {
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}
